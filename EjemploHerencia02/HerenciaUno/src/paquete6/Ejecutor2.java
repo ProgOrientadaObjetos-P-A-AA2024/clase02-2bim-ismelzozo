@@ -27,7 +27,27 @@ public class Ejecutor2 {
         while(bandera){
             System.out.println("ingresa un saludo");
             String saludo = entrada.nextLine();
-            cadena = String.format("%s%s\n", cadena, saludo);
+            System.out.println("Ingrese el nombre del estudiante: ");
+            String nombre = entrada.nextLine();
+            System.out.println("Ingrese el apellido del estudiante: ");
+            String apellido = entrada.nextLine();
+            System.out.println("Ingrese su identificacion: ");
+            String identificacion = entrada.nextLine();
+            System.out.println("Ingrese su edad: ");
+            int edad = entrada.nextInt();
+            
+            System.out.println("Ingrese el numero de creditos: ");
+            int numeroCredito = entrada.nextInt();
+            System.out.println("Ingrese el costo de creditos: ");
+            double costoCredito = entrada.nextDouble();
+            EstudiantePresencial ep = new EstudiantePresencial(nombre, saludo, 
+                    cadena, edad, costoCredito, edad);
+            ep.calcularMatriculaPresencial();
+            entrada.nextLine();
+            cadena = String.format("========\n%s\n========\nNombre:\n %s\n========\n"
+                    + "Apellido:\n %s\n========\nIdentificacion:\n %s\n========\nEdad:\n %s\n========\n"
+                    + "Numero de creditos:\n %s\n========\nCosto Credito:\n %.2f", saludo, 
+                    nombre,apellido, identificacion, edad,numeroCredito,costoCredito);
             System.out.println("Desea salir, pulse S");
             String opcion = entrada.nextLine();
             if(opcion.equals("S")){

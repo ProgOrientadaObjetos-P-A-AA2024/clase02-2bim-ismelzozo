@@ -48,5 +48,24 @@ public class EstudiantePresencial extends Estudiante{
     public double obtenerMatriculaPresencial(){
         return matriculaPresencial;
     }
+    @Override
+    public String toString() {
+        String toString = String.format("==========================\n"
+                + "Nombre: %s\n"
+                + "Apellido: %s\n"
+                + "Identificacion: %s\n"
+                + "=========================\n"
+                + "Numero de creditos: %s\n"
+                + "Valor de credito: %.2f\n"
+                + "Matricula: %.2f\n"
+                + "=========================",
+                nombresEstudiante,
+                obtenerApellidoEstudiante(),
+                identificacionEstudiante,
+                numeroCreditos,
+                costoCredito,
+                obtenerMatriculaPresencial());
+        return toString; 
+    }
     
 }
