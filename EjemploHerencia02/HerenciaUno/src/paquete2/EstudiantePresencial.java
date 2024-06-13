@@ -1,6 +1,10 @@
 
 package paquete2;
-
+/*
+en estudiante presencial no tiene un constructor que que asemeje a la clase estudiante 
+si en la super clase(estudiante) obligatoriamente se necesita tener en la subclase se necesita un costructor 
+(estudiante presencial).
+*/
 public class EstudiantePresencial extends Estudiante{
     
     /*1.  Declarar

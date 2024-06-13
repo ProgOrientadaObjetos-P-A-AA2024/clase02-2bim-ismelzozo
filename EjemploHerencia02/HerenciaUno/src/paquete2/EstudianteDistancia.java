@@ -1,11 +1,14 @@
 package paquete2;
-
+/*
+en estudiante distancia no tiene un constructor que que asemeje a la clase estudiante 
+*/
 public class EstudianteDistancia extends Estudiante{
     
     private int numeroAsignaturas;
     private double costoAsignatura;
     private double matriculaDistancia;
     
+    public EstudianteDistancia(s)
     
     // 2.  Método establecerNumeroAsginaturas(numero: Real)
     public void establecerNumeroAsginaturas(int numero){

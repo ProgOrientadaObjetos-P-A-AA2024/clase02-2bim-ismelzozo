@@ -6,7 +6,9 @@ public class EstudianteDistancia extends Estudiante{
     private int numeroAsignaturas;
     private double costoAsignatura;
     private double matriculaDistancia;
-    
+    /*
+    el cosntructor de estudiante distancia 
+    */
     public EstudianteDistancia(String n, String ap, String iden, int e){
         super(n, ap, iden, e);
     }
@@ -37,9 +39,38 @@ public class EstudianteDistancia extends Estudiante{
         return costoAsignatura;
     }
 
-    // 7. Método obtenerMatriculaDistancia() : Real
+    // 7. Método obtenerMatriculaDistancia() : Reals
     public double obtenerMatriculaDistancia(){
         return matriculaDistancia;
+    }
+    /*
+
+    @Override
+    public String toString() {
+        String toString = String.format("===================================\n"
+                + "Nombre estudiante: %s\n"
+                + "Numero de asignaturas: %d\n"
+                + "Valor de asigantura: %.2f\n"
+                + "Valor matricula: %.2f", 
+                obtenerNombresEstudiante(),
+                numeroAsignaturas,costoAsignatura,
+                obtenerMatriculaDistancia());
+        return toString; 
+    }
+    */
+    @Override
+    public String toString() {
+        String toString = String.format("============================\n"
+                + "%s"
+                + "============================\n"
+                + "Numero de asignaturas: %d\n"
+                + "Valor de asigantura: %.2f\n"
+                + "Valor matricula: %.2f"
+                + "\n============================\n",
+                super.toString(),
+                numeroAsignaturas,costoAsignatura,
+                obtenerMatriculaDistancia());
+        return toString; 
     }
 
 }
