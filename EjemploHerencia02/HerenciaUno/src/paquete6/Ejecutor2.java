@@ -40,11 +40,11 @@ public class Ejecutor2 {
             int numeroCredito = entrada.nextInt();
             System.out.println("Ingrese el costo de creditos: ");
             double costoCredito = entrada.nextDouble();
-            EstudiantePresencial ep = new EstudiantePresencial(nombre, saludo, 
-                    cadena, edad, costoCredito, edad);
+            EstudiantePresencial ep = new EstudiantePresencial(nombre, apellido, 
+                    identificacion, edad, costoCredito, numeroCredito);
             ep.calcularMatriculaPresencial();
             entrada.nextLine();
-            cadena = String.format("%s",cadena,ep);
+            cadena = String.format("%s\n",saludo, ep);
             System.out.println("Desea salir, pulse S");
             String opcion = entrada.nextLine();
             if(opcion.equals("S")){
