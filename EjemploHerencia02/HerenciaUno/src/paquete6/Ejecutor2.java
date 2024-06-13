@@ -44,7 +44,7 @@ public class Ejecutor2 {
                     cadena, edad, costoCredito, edad);
             ep.calcularMatriculaPresencial();
             entrada.nextLine();
-            cadena = String.format("%s",ep);
+            cadena = String.format("%s",cadena,ep);
             System.out.println("Desea salir, pulse S");
             String opcion = entrada.nextLine();
             if(opcion.equals("S")){
