@@ -9,7 +9,7 @@ package paquete3;
  *
  * @author reroes
  */
-public class Ejecutor {
+public class Ejecutor3 {
 
     public static void main(String[] args) {
 
@@ -19,13 +19,13 @@ public class Ejecutor {
         String identificacion = "110011";
         int edad = 36;
 
-        EstudianteDistancia estDistancia = new EstudianteDistancia(nombre,
+        EstudiantePresencial ep = new EstudiantePresencial(nombre,
                 apellido, identificacion, edad);
-        estDistancia.establecerCostoAsignatura(100);
-        estDistancia.establecerNumeroAsginaturas(5);
-        estDistancia.calcularMatriculaDistancia();
+        ep.establecerNumeroCreditos(100);
+        ep.establecerCostoCredito(5);
+        ep.calcularMatriculaPresencial();
         
-        System.out.println(estDistancia);
+        System.out.println(ep);
 
     }
 }
